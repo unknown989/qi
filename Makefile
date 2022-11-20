@@ -2,7 +2,8 @@ all: make_static
 	g++ main.cpp -o build/qi -Lbuild -lqi
     
 make_static:
-	g++ src/* -c -o build/lib/*.o
+	g++ src/* -c
+	mv *.o build/lib
 	ar rsv build/libqi.a build/lib/*
 
 clean:
