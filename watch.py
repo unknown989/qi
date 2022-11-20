@@ -15,12 +15,12 @@ def main():
     
     while True:
         try:
-            c = input("")
             new_size = get_size(config["watch"]["file"])
             
             if old_size != new_size:
                 run_cmd(config["watch"]["command"])
             
+            c = input("")
             if c == 'r':
                 run_cmd(config["watch"]["command"])
                 
