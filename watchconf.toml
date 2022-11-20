@@ -1,0 +1,3 @@
+[watch]
+file = "main.cpp"
+command = "sh ./run_after_watch.sh"
